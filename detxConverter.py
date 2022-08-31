@@ -10,7 +10,7 @@ the feel of real. X1 .</i>
 
 '''
 #opening the subtitles file and reading it into a variable
-sub_file = open('sub.srt', 'r')
+sub_file = open('sub.srt', mode = 'r', errors="ignore")
 Lines = sub_file.readlines()
 
 #removing all empty lines from the file
